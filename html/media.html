@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media | Death Oath</title>
+    <link rel="stylesheet" href="/css/mediapage.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/mediapage.css">
+    <link rel="icon" href="/images/Death Oath Logo.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href="/html/home.html">DO</a>
+            </div>
+            <nav>
+                <button id="nav-toggle" class="hamburger-menu">
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                </button>
+                <ul id="nav-menu-container">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gameinfo.html">Game Info</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="leaderboards.html">Leaderboards</a></li>
+                    <li><a href="live.html">Live</a></li>
+                </ul>
+            </nav>
+            
+            <a href="/html/login-register-form.html" id="login-register-button">Play Now</a>
+        </div>
+    </header>
+
+        <div class="categories">
+            <ul>
+                <li class="item">
+                <a href="#"><span>Wallpapers</span></a>
+                </li>
+                <li class="item">
+                <a href="#"><span>Photos</span></a>
+                </li>
+                <li class="item">
+                <a href="#"><span>Videos</span></a>
+                </li>
+                <li class="item">
+                <a href="#"><span>Players' Screenshots</span></a>
+                </li>
+                <li class="item">
+                <a href="#"><span>Artworks</span></a>
+                </li>
+                <li class="item">
+                <a href="#"><span>Highlights</span></a>
+                </li>
+                <li class="item">
+                <a href="#"><span>Fanworks</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <img src="/images/queen.jpg" alt="Queen's Demise">
+            <img src="/images/player-screenshot.jpg" alt="Player's Screenshot">
+            <img src="/images/templar-assassin.jpg" alt="Templar Assassin">
+            <img src="/images/character-customization.jpg" alt="Character Customization">
+            <img src="/images/world-boss-teamplay.jpg" alt="Boss Fight">
+            <img src="/images/persona-selection.jpg" alt="Persona Selection">
+        </div>
+
+    <footer>
+        <div class="flex">
+            <p>Copyright © 2022 By Dan Rikster Abangan - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            let navMenu = document.getElementById('nav-menu-container');
+            navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
